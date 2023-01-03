@@ -1,10 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;300;400;500;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700;900&display=swap');
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Alegreya Sans", sans-serif;
+  font-family: 'DM Sans', sans-serif;
 }
 
 body {
@@ -55,7 +55,7 @@ body {
 
 .chat {
   width: 100%;
-  max-width: 1280px;
+  max-width: 1000px;
   margin: 0 auto;
 
   display: flex;
@@ -114,7 +114,7 @@ body {
 
 form {
   width: 100%;
-  max-width: 1280px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 10px;
   background: #40414f;
@@ -132,7 +132,7 @@ textarea {
 
   padding: 10px;
   background: transparent;
-  border-radius: 5px;
+  border-radius: 15px;
   border: none;
   outline: none;
 }

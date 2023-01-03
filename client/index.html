@@ -2,25 +2,76 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" type="image/svg+xml" href="./assets/bot.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chat Ai</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <title>ChatBuddy</title>
+    <style>
+      body,
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'DM Sans', sans-serif;
+        background: #343541;
+      }
+      main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+
+        color: antiquewhite;
+      }
+      main div {
+        text-align: center;
+      }
+      h2 {
+        font-weight: 700;
+        font-size: 3rem;
+      }
+      p {
+        font-size: 1.5rem;
+      }
+      button {
+        margin-top: 20px;
+        border-radius: 25px;
+        padding: 9px 20px;
+        border: none;
+        outline: none;
+
+        background-color: gray;
+        color: antiquewhite;
+        font-size: 1.3rem;
+        cursor: pointer;
+      }
+      button:hover {
+        color: black;
+      }
+      img {
+        height: 100px;
+      }
+    </style>
   </head>
   <body>
-    <div id="app">
-      <div id="chat_container"></div>
-
-      <form>
-        <textarea
-          name="prompt"
-          cols="1"
-          rows="1"
-          placeholder="Ask Codex ..."
-        ></textarea>
-        <button type="submit"><img src="assets/send.svg" alt="send" /></button>
-      </form>
-    </div>
-    <script type="module" src="/script.js"></script>
+    <main>
+      <div data-aos="zoom-in">
+        <img src="./assets/bot.svg" alt="bot" />
+        <h2>ChatBuddy</h2>
+        <p>Your chatbot buddy consuming the OpenAi API</p>
+        <a href="landing.html"><button>Get Started</button></a>
+      </div>
+    </main>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init()
+    </script>
   </body>
 </html>
