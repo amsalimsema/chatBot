@@ -16,12 +16,14 @@ body {
 #app {
   width: 100%;
   height: 100vh;
+
   background: #343541;
 
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 100px;
 }
 
 #chat_container {
@@ -134,7 +136,7 @@ textarea {
 
   padding: 10px;
   background: transparent;
-  border-radius: 15px;
+  border-radius: 10px;
   border: none;
   outline: none;
 }
