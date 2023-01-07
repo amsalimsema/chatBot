@@ -23,7 +23,6 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 100px;
 }
 
 #chat_container {
@@ -151,4 +150,18 @@ button {
 form img {
   width: 30px;
   height: 30px;
+}
+
+/* offline */
+.offline {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: antiquewhite;
+
+  text-align: center;
+}
+.offline img {
+  height: 100px;
 }
