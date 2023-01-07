@@ -10,19 +10,22 @@
 body {
   background: #343541;
   scroll-behavior: smooth;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 #app {
   width: 100%;
   height: 100vh;
-
   background: #343541;
 
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+
+  margin-bottom: 40px;
+
+  z-index: -10;
 }
 
 #chat_container {
