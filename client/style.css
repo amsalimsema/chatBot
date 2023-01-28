@@ -153,16 +153,24 @@ form img {
   height: 30px;
 }
 
-/* offline */
-.offline {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: antiquewhite;
-
-  text-align: center;
+/* scrollbar */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
 }
-.offline img {
-  height: 100px;
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #343541;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }

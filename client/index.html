@@ -14,23 +14,23 @@
     />
     <link rel="stylesheet" href="style.css" />
 
-    <title>ChatBuddy</title>
+    <title>ChatBuddy | Ai powered Chat Bot</title>
     <style>
       main {
         display: flex;
         align-items: center;
         justify-content: center;
-        /* height: 100vh; */
+        height: 100vh;
         width: 100%;
-        margin: 30px auto;
+        /* margin: 30px auto; */
 
-        color: antiquewhite;
+        color: #dcdcdc;
       }
-      @media screen and (max-width: 480px) {
+      /* @media screen and (max-width: 480px) {
         main {
           height: auto;
         }
-      }
+      } */
       main div {
         text-align: center;
       }
@@ -39,7 +39,7 @@
         font-size: 3rem;
       }
       main p {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
       }
       main button {
         margin-top: 20px;
@@ -49,15 +49,24 @@
         outline: none;
 
         background-color: gray;
-        color: antiquewhite;
+        color: #dcdcdc;
         font-size: 1.3rem;
         cursor: pointer;
       }
       main button:hover {
-        color: black;
+        color: #dcdcdc;
       }
       main img {
         height: 100px;
+      }
+
+      footer {
+        background-color: #40414f;
+        color: #dcdcdc;
+        text-align: center;
+        margin-top: 40px;
+
+        padding: 40px;
       }
     </style>
   </head>
@@ -67,6 +76,13 @@
         <img src="./assets/bot.svg" alt="bot" />
         <h2>ChatBuddy</h2>
         <p>Your chatbot buddy consuming the OpenAi API</p>
+        <p>
+          It is based on the GPT (Generative Pre-training Transformer)
+          architecture
+        </p>
+        <p>
+          that can generate text that is similar to the text written by humans.
+        </p>
         <a href="#app"><button>Get Started</button></a>
       </div>
     </main>
@@ -86,6 +102,19 @@
         </button>
       </form>
     </div>
+
+    <!-- footer -->
+    <footer>
+      <p>Powered by vercel and render</p>
+      <p>
+        &copy;
+        <script>
+          document.write(new Date().getFullYear())
+        </script>
+        ChatBuddy Ai Bot
+      </p>
+    </footer>
+    <!-- end footer -->
     <script type="module" src="script.js"></script>
     <!-- end -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
