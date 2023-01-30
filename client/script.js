@@ -71,7 +71,7 @@ const handleSubmit = async (e) => {
 
   chatContainer.scrollTop = chatContainer.scrollHeight
 
-  // specific message div for specify is this bot or user?
+  // specific message div to specify is this bot or user?
 
   const messageDiv = document.getElementById(uniqueId)
 
